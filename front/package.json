@@ -1,0 +1,19 @@
+{
+  "name": "front",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "vite": "^2.4.4"
+  },
+  "main": "main.js",
+  "dependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
