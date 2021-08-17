@@ -1,10 +1,10 @@
-import './src/styles/style.css';
+import './src/styles/settings/colors.css';
+import './src/styles/generics/reset.css';
+import './src/styles/elements/base.css';
 
-const $root = document.querySelector('#root');
+import MainHeader from './src/components/MainHeader';
 
-const $htmlTitle = /* html */ `
-	<h1>Hello Vite!</h1>
-	<a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+const $root = document.querySelector( '#root' );
+const $htmlHeader = MainHeader();
 
-$root.insertAdjacentHTML('beforeend', $htmlTitle);
+$root.insertAdjacentHTML( 'beforeend', `${ $htmlHeader }` );
