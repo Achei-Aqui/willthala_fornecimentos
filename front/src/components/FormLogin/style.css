@@ -1,0 +1,35 @@
+.container {
+	display: block;
+}
+
+.form {
+	display: block;
+	margin: 0 auto;
+	max-width: 700px;
+	padding-top: 30px;
+	width: 80vw;
+}
+
+.form-login {
+	display: block;
+	margin: 0 auto;
+	width: 80vw;
+}
+
+label {
+	color: var(--color-white);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.input {
+	border: 1px solid var(--color-orage-border);
+	border-radius: 10px;
+	box-shadow: 2px 3px var(--color-orage-border);
+	margin: 10px;
+	max-width: 400px;
+	padding: 1rem;
+	text-align: left;
+	width: 70vw;
+}
