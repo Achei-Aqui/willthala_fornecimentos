@@ -1,0 +1,8 @@
+.link-register {
+	color: var(--color-white);
+	display: block;
+	font-family: 'open sans';
+	font-size: 1.3rem;
+	text-align: center;
+	margin: -10px;
+}
