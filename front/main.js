@@ -2,9 +2,9 @@ import './src/styles/settings/colors.css';
 import './src/styles/generics/reset.css';
 import './src/styles/elements/base.css';
 
-import MainHeader from './src/components/MainHeader';
+import UserLogin from './src/objects/UserLogin';
 
 const $root = document.querySelector( '#root' );
-const $htmlHeader = MainHeader();
+const $htmlLogin = UserLogin();
 
-$root.insertAdjacentHTML( 'beforeend', `${ $htmlHeader }` );
+$root.insertAdjacentHTML( 'beforeend', `${ $htmlLogin }` );
