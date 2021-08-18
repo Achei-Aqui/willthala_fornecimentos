@@ -1,9 +1,7 @@
-:root {
+.main-title {
   font-family: 'Cabin Sketch', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: var( --color-white );
-  font-size: 5rem;
-  margin: 20px;
+  font-size: 4rem;
+  margin-top: 40px;
 }

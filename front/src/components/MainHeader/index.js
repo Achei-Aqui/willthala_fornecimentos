@@ -1,11 +1,12 @@
 import './style.css';
-
+import '../../styles/tools/containers.css'
 const MainHeader = () => {
 	return /* html */ `
-		<header>
-			<h1>Achei Aqui!</h1>
-			<!-- <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a> -->
-		</header>
+		<div class="container">
+			<header>
+				<h1 class="main-title">Achei Aqui!</h1>
+			</header>
+		</div>
 	`;
 }
 
