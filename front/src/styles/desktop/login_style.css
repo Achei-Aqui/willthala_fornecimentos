@@ -1,0 +1,11 @@
+@media (min-width: 866px) {
+	.input.-cnpj{
+		margin-left: 30px;
+		width: 61vw;
+	}
+
+	.input.-password{
+		max-width: 548px;
+		width: 55.5vw;
+	}
+}
