@@ -2,7 +2,11 @@
 	display: block;
 }
 
-.form {
+.main-title{
+	text-align: center;
+}
+
+.div-form-login {
 	display: block;
 	margin: 0 auto;
 	max-width: 700px;
@@ -24,12 +28,7 @@ label {
 }
 
 .input {
-	border: 1px solid var(--color-orage-border);
-	border-radius: 10px;
-	box-shadow: 2px 3px var(--color-orage-border);
-	margin: 10px;
-	max-width: 400px;
-	padding: 1rem;
+	max-width: 550px;
 	text-align: left;
 	width: 70vw;
 }
