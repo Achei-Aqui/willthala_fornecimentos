@@ -1,7 +1,18 @@
+.div-main-header-register-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-title {
+	order: 0;
+}
+
 .h2-register,
 form {
 	color: var(--color-white);
 	font-family: 'Open Sans', sans-serif;
+	order: 1;
 }
 
 .h2-register {
@@ -9,18 +20,25 @@ form {
 	font-style: italic;
 	font-weight: 600;
 	padding: 15px 0 30px;
-	text-align: center;
 }
 
 .logo-header {
+	max-width: 296px;
+	padding: 10px;
+	width: 30vw;
+	background-color: var(--color-white);
+	border-radius: 300px;
 
-	display: none;
 }
 
 form {
 	display: block;
 	margin: 0 auto;
 	width: 85vw;
+}
+
+.data-info-contact {
+	margin-top: 20px;
 }
 
 .form-register {
@@ -31,14 +49,15 @@ form {
 
 label,
 .div-type-radio {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
+	font-weight: 600;
 	padding: 10px 0;
-	margin: 10px;
+	margin: 10px 0;
 }
 
 .input {
 	display: block;
-	margin: 15px 0;
+	margin: 15px 0 30px;
 	max-width: 920px;
 	width: 82vw;
 }

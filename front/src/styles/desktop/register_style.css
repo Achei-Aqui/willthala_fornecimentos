@@ -1,4 +1,4 @@
-@media (min-width: 940px) {
+@media (min-width: 768px) {
 
 	.div-main-header-register-logo {
 		align-items: center;
@@ -9,18 +9,6 @@
 	.main-title {
 		margin: 40px 0;
 		width: 150px;
-	}
-
-	.logo-header {
-		margin: 0;
-		display: flex;
-		max-width: 296px;
-		padding: 10px;
-		text-align: center;
-		width: 5vw;
-		background-color: var(--color-white);
-		border-radius: 300px;
-
 	}
 
 	.div-input,

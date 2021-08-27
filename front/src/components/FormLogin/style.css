@@ -31,6 +31,10 @@
 	max-width: min-content;
 }
 
+.container-login-password {
+	margin-top: 20px;
+}
+
 label {
 	color: var(--color-white);
 	font-family: 'Open Sans', sans-serif;
