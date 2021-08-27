@@ -4,11 +4,12 @@
 	border-radius: 10px;
 	box-shadow: 2px 2px var(--color-purple);
 	color: var(--color-white);
+	cursor: pointer;
 	display: block;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: bolder;
 	margin: 20px auto;
-	padding: 10px 22px 6px;
+	padding: 10px 22px;
 	text-align: center;
-	width: 9rem;
+	width: 10rem;
 }

@@ -1,5 +1,8 @@
+import ButtonNext from "../ButtonForm/ButtonNext";
+
 const ContactRegister = () => {
 	return /* html */ `
+	
 		<section class="name-cnpj-phone-email">
 
 			<div class="div-input div-company-name">
@@ -28,6 +31,8 @@ const ContactRegister = () => {
 			</div>
 
 		</section>
+
+		${ ButtonNext() }
 	`;
 }
 

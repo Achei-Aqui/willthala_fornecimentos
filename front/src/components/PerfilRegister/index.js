@@ -42,8 +42,6 @@ const PerfilRegister = () => {
 
 					</div>
 
-					<input class="pattern_button" value="Enviar">
-					
 				</div>
 
 			</form>
