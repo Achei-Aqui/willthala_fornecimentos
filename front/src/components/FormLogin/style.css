@@ -48,3 +48,7 @@ label {
 	text-align: left;
 	width: 70vw;
 }
+
+.pattern_button {
+	margin: 20px auto;
+}

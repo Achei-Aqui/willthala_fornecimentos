@@ -1,6 +1,8 @@
 const ButtonNext = () => {
 	return /* html */ `
-		<button class="pattern_button">Próximo</button>
+		<div class="container-button-next-form">
+			<button class="pattern_button button-next-form">Próximo</button>
+		</div>
 	`;
 }
 

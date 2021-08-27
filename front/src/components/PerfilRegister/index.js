@@ -2,7 +2,6 @@ import '../../styles/tools/containers.css';
 import '../../styles/settings/colors.css';
 import '../../styles/elements/inputs_forms.css';
 import '../../styles/elements/pattern_button.css';
-import '../../styles/desktop/register_style.css';
 import './style.css';
 import MainHeader from '../MainHeader';
 import AddressRegister from '../AddressRegister';

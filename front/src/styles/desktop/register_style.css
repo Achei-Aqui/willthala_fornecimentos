@@ -3,7 +3,8 @@
 	.div-main-header-register-logo {
 		align-items: center;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 
 	.main-title {
@@ -11,50 +12,32 @@
 		width: 150px;
 	}
 
-	.div-input,
-	label {
-		align-items: center;
-		display: flex;
-		margin-top: -35px;
-		max-width: 940px;
+	.h2-register {
+		order: 0;
 	}
 
-	.div-input label {
-		font-size: 1.2rem;
-	}
-
-	.container-cnpj-phone,
-	.container-category-type,
-	.div-company-password {
+	.container-cnpj-phone {
 		display: flex;
+		max-width: 960px;
 		justify-content: space-between;
-		max-width: 959px;
 	}
 
-	.container-password {
-		display: flex;
-		justify-content: space-between;
-
+	#input-company-cnpj,
+	#input-company-phone {
+		width: 38vw;
+		max-width: 440px;
 	}
 
-	.container-cnpj-phone .input,
-	.container-category-type .input {
-		max-width: 340px;
-		width: 90vw;
+	#input-company-cnpj {
+		margin-right: 20px;
 	}
 
-	.container-password .input {
-		justify-content: space-between;
-		max-width: 300px;
+	.button-next-form {
+		float: right;
 	}
 
-	.div-input.div-type-radio {
-		align-content: center;
-		display: flex;
-		justify-content:
-		space-between;
-		margin-top: -35px;
-		max-width: 460px;
+	.container-button-next-form {
+		width: 960px;
 	}
 
 }
