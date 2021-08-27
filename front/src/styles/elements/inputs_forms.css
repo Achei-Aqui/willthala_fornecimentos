@@ -4,7 +4,5 @@
 	box-shadow: 2px 3px var(--color-orange-border);
 	color: var(--color-orange);
 	font-size: 1.1rem;
-	margin: 10px;
-	max-width: 400px;
-	padding: .8rem;
+	padding: 0.8rem;
 }
