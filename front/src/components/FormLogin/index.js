@@ -1,6 +1,5 @@
 import '../../styles/tools/containers.css';
 import '../../styles/elements/inputs_forms.css';
-import '../../styles/desktop/login_style.css'
 import './style.css';
 
 const FormLogin = () => {
@@ -10,15 +9,21 @@ const FormLogin = () => {
 
 				<form action="POST" class="form-login">
 
-					<label for="cnpj-login">CNPJ:
-						<input id="cnpj-login" class="input -cnpj">
-					</label>
+					<div class="container-login-cnpj-password">
 
-					<br/>
+						<div class="container-login-cnpj">
+							<label for="cnpj-login">CNPJ:
+								<input id="cnpj-login" class="input -cnpj">
+							</label>
+						</div>
 
-					<label for="password-login">Senha:
-						<input id="password-login" class="input -password">
-					</label>
+						<div class="container-login-password">
+							<label for="password-login">Senha:
+								<input id="password-login" class="input -password">
+							</label>
+						</div>
+						
+					</div>
 
 					<br/>
 

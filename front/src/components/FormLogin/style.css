@@ -20,6 +20,17 @@
 	width: 80vw;
 }
 
+.container-login-cnpj-password,
+.container-login-cnpj,
+.container-login-password {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-login-cnpj-password {
+	max-width: min-content;
+}
+
 label {
 	color: var(--color-white);
 	font-family: 'Open Sans', sans-serif;
@@ -28,7 +39,8 @@ label {
 }
 
 .input {
-	max-width: 550px;
+	margin: 2% 0;
+	max-width: 700px;
 	text-align: left;
 	width: 70vw;
 }
