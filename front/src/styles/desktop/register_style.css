@@ -1,5 +1,7 @@
 @media (min-width: 768px) {
 
+	/* ContactRegister */
+
 	.div-main-header-register-logo {
 		align-items: center;
 		display: flex;
@@ -20,6 +22,7 @@
 		display: flex;
 		max-width: 960px;
 		justify-content: space-between;
+		width: 90vw;
 	}
 
 	#input-company-cnpj,
@@ -39,5 +42,72 @@
 	.container-button-next-form {
 		width: 960px;
 	}
+
+	/* AddressRegister */
+
+	.container-cep-street,
+	.container-complement-number,
+	.container-neighborhood-city-state {
+		display: flex;
+		max-width: 960px;
+		justify-content: space-between;
+		width: 90vw;
+	}
+
+	#input-company-cep,
+	#input-company-neighborhood {
+		margin-right: 20px;
+		width: 15vw;
+	}
+
+	#input-company-street,
+	#input-company-complement {
+		width: 33vw;
+	}
+
+	.div-company-address-no-number {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.div-company-address-no-number label {
+		font-size: 1.1rem;
+	}
+
+	.div-company-address-no-number #input-company-no-number + label:after {
+		margin: 12px 0px 0px 5px;
+		width: 6vw;
+	}
+
+	.container-number-no-number {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#input-company-number,
+	#input-company-no-number:after {
+		width: 7vw;
+	}
+
+	#input-company-city {
+		width: 22vw;
+	}
+
+	#input-company-state {
+		width: 10vw;
+	}
+
+
+
+
+
+
+
+
+
+	/* PasswordRegister */
 
 }

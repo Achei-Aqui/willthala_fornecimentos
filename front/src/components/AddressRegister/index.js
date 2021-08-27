@@ -7,7 +7,6 @@ const AddressRegister = () => {
 
 			<h2 class="h2-register h2-register-address">Endereço</h2>
 
-
 			<div class="container-cep-street">
 				<div class="div-input div-company-address-cep">
 					<label for="input-company-cep"> CEP:
@@ -24,10 +23,16 @@ const AddressRegister = () => {
 
 			<div class="container-complement-number">
 
-				<div class="div-input div-company-address-number">
-					<label for="input-company-number"> Número:
-						<input class="input" id="input-company-number" title="Caso seu endereço não contenha número, preencha esse campo com o valor '0' (zero)" type="text" required>
-					</label>
+				<div class="container-number-no-number">
+					<div class="div-input div-company-address-number">
+						<label for="input-company-number"> Número:
+							<input class="input" id="input-company-number" type="text">
+						</label>
+					</div>
+					<div class="div-input div-company-address-no-number">
+						<input class="input" id="input-company-no-number" type="checkbox">
+						<label for="input-company-no-number">S/ Número:</label>
+					</div>
 				</div>
 
 				<div class="div-input div-company-address-complement">
