@@ -40,7 +40,7 @@
 	}
 
 	.container-button-next-form {
-		width: 960px;
+		max-width: 960px;
 	}
 
 	/* AddressRegister */
@@ -55,57 +55,33 @@
 	}
 
 	#input-company-cep,
+	#input-company-number,
 	#input-company-neighborhood {
 		margin-right: 20px;
-		width: 15vw;
+		max-width: 239px;
+		width: 20vw;
 	}
 
 	#input-company-street,
 	#input-company-complement {
-		width: 33vw;
-	}
-
-	.div-company-address-no-number {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-
-	.div-company-address-no-number label {
-		font-size: 1.1rem;
-	}
-
-	.div-company-address-no-number #input-company-no-number + label:after {
-		margin: 12px 0px 0px 5px;
-		width: 6vw;
-	}
-
-	.container-number-no-number {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	#input-company-number,
-	#input-company-no-number:after {
-		width: 7vw;
+		max-width: 653px;
+		width: 60vw;
 	}
 
 	#input-company-city {
-		width: 22vw;
+		max-width: 398px;
+		width: 40vw;
+	}
+
+	.div-company-address-state label {
+		margin: 20px;
 	}
 
 	#input-company-state {
-		width: 10vw;
+		margin-left: 20px;
+		max-width: 239px;
+		width: 15vw;
 	}
-
-
-
-
-
-
-
 
 
 	/* PasswordRegister */

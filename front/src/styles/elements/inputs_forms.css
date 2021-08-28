@@ -6,3 +6,8 @@
 	font-size: 1.1rem;
 	padding: 0.8rem;
 }
+
+.input::placeholder {
+	color: var(--color-placeholder-input);
+	font-style: italic;
+}

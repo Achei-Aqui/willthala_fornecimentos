@@ -8,25 +8,21 @@ const PasswordRegister = () => {
 
 				<div class="container-category-type">
 
+					<label for="categories"> Categoria:</label>
+
 					<div class="div-input div-company-category">
 
-						<label for="categories"> Categoria:
-
-							<select class="input categories-select" name="categories" id="categories-buy" required>
-
-								<option selected disabled value="">Selecione...</option>
-								<option value="food">Alimento</option>
-								<option value="toys">Brinquedo</option>
-								<option value="appliances">Eletrodoméstico</option>
-								<option value="electronics">Eletroeletrônico</option>
-								<option value="sports">Esporte</option>
-								<option value="furniture">Móvel</option>
-								<option value="perfumery">Perfumaria</option>
-								<option value="clothing">Vestuário</option>
-
-							</select>
-
-						</label>
+						<select class="input categories-select" name="categories" id="categories-buy" required>
+							<option selected disabled value="">Selecione...</option>
+							<option value="food">Alimento</option>
+							<option value="toys">Brinquedo</option>
+							<option value="appliances">Eletrodoméstico</option>
+							<option value="electronics">Eletroeletrônico</option>
+							<option value="sports">Esporte</option>
+							<option value="furniture">Móvel</option>
+							<option value="perfumery">Perfumaria</option>
+							<option value="clothing">Vestuário</option>
+						</select>
 
 					</div>
 
@@ -44,12 +40,6 @@ const PasswordRegister = () => {
 
 					</div>
 
-				</div>
-
-				<div class="div-input div-company-logo-image">
-					<label for="input-company-logo-image"> Logo da empresa:
-						<input class="input" id="input-company-logo-image" placeholder="Informe a url da imagem" type="text" required>
-					</label>
 				</div>
 
 				<div class="div-input div-company-password">
