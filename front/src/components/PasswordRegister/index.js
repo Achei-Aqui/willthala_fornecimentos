@@ -6,9 +6,9 @@ const PasswordRegister = () => {
 
 			<div class="container-password">
 
-				<div class="container-category-type">
+				<label for="categories"> Categoria:</label>
 
-					<label for="categories"> Categoria:</label>
+				<div class="container-category-type">
 
 					<div class="div-input div-company-category">
 
@@ -26,7 +26,7 @@ const PasswordRegister = () => {
 
 					</div>
 
-					<div class="div-input div-type-radio"> Tipo:
+					<div class="div-input div-type-radio">
 
 						<div class="div-button-type-radio">
 							<input class="input-radio -provider" id="provider" name="type-button" type="radio" checked>
@@ -58,7 +58,9 @@ const PasswordRegister = () => {
 
 		</section>
 
-		${ ButtonSend() }
+		<div class="container-button-send-form">
+			${ ButtonSend() }
+		</div>
 	`;
 }
 
