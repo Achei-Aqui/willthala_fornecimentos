@@ -9,15 +9,15 @@ const AddressRegister = () => {
 
 			<div class="container-cep-street">
 				<div class="div-input div-company-address-cep">
-					<label for="input-company-cep"> CEP:
-						<input class="input" id="input-company-cep" placeholder="13720-218" type="text" required>
-					</label>
+					<label for="input-company-cep"> CEP:</label>
+					<input class="input" id="input-company-cep" placeholder="13720-218" type="text" required>
+					<div class="input-error-message">Este campo não está válido</div>
 				</div>
 
 				<div class="div-input div-company-address-street">
-					<label for="input-company-street"> Logradouro:
-						<input class="input" id="input-company-street" placeholder="Rua Francisco Venceslau" type="text" required>
-					</label>
+					<label for="input-company-street"> Logradouro: </label>
+					<input class="input" id="input-company-street" placeholder="Rua Francisco Venceslau" type="text" required>
+					<div class="input-error-message">Este campo não está válido</div>
 				</div>
 			</div>
 
@@ -25,16 +25,16 @@ const AddressRegister = () => {
 
 				<div class="container-number-no-number">
 					<div class="div-input div-company-address-number">
-						<label for="input-company-number"> Número:
-							<input class="input" id="input-company-number" placeholder="1250" type="text">
-						</label>
+						<label for="input-company-number"> Número: </label>
+						<input class="input" id="input-company-number" placeholder="1250" type="text">
+						<div class="input-error-message">Este campo não está válido</div>
 					</div>
 				</div>
 
 				<div class="div-input div-company-address-complement">
-					<label for="input-company-complement"> Complemento:
-						<input class="input" id="input-company-complement" placeholder="bl 2 apto 31" type="text">
-					</label>
+					<label for="input-company-complement"> Complemento: </label>
+					<input class="input" id="input-company-complement" placeholder="bl 2 apto 31" type="text">
+					<div class="input-error-message">Este campo não está válido</div>
 				</div>
 
 			</div>
@@ -42,15 +42,15 @@ const AddressRegister = () => {
 			<div class="container-neighborhood-city-state">
 
 				<div class="div-input div-company-address-neighborhood">
-					<label for="input-company-neighborhood"> Bairro:
-						<input class="input" id="input-company-neighborhood" placeholder="Jd. Caçula" type="text" required>
-					</label>
+					<label for="input-company-neighborhood"> Bairro: </label>
+					<input class="input" id="input-company-neighborhood" placeholder="Jd. Caçula" type="text" required>
+					<div class="input-error-message">Este campo não está válido</div>
 				</div>
 
 				<div class="div-input div-company-address-city">
-					<label for="input-company-city"> Cidade:
-						<input class="input" id="input-company-city" placeholder="Caçapava" type="text" required>
-					</label>
+					<label for="input-company-city"> Cidade: </label>
+					<input class="input" id="input-company-city" placeholder="Caçapava" type="text" required>
+					<div class="input-error-message">Este campo não está válido</div>
 				</div>
 
 				<div class="div-input div-company-address-state">
@@ -88,8 +88,12 @@ const AddressRegister = () => {
 								<option value="TO">TO</option>
 							</select>
 						</div>
-						<!-- <input class="input" id="input-company-state" type="text" required> -->
 					</label>
+
+					<div class="input-error-message">Este campo não está válido</div>
+					
+					<!-- <input class="input" id="input-company-state" type="text" required> -->
+
 				</div>
 
 			</div>

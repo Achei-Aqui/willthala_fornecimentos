@@ -23,7 +23,6 @@ const PasswordRegister = () => {
 							<option value="perfumery">Perfumaria</option>
 							<option value="clothing">Vestuário</option>
 						</select>
-
 					</div>
 
 					<div class="div-input div-type-radio">
@@ -44,13 +43,17 @@ const PasswordRegister = () => {
 
 				<div class="div-input div-company-password">
 
-					<label for="input-company-password">Senha:
+					<div>
+						<label for="input-company-password">Senha: </label>
 						<input class="input input-password" type="password" name="register-password" id="input-company-password">
-					</label>
+						<div class="input-error-message">Este campo não está válido</div>
+					</div>
 
-					<label id="-confirm-password" for="input-company-password-repeat">Confirme a senha:
+					<div>
+						<label id="-confirm-password" for="input-company-password-repeat">Confirme a senha: </label>
 						<input class="input input-password" type="password" name="register-password" id="input-company-password-repeat">
-					</label>
+						<div class="input-error-message">Este campo não está válido</div>
+					</div>
 
 				</div>
 
