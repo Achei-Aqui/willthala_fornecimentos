@@ -140,22 +140,21 @@ select::-ms-expand {
 	position: relative;
 	display: flex;
 	width: 16vw;
-	max-width: 239px;
+	max-width: 960px;
 	height: 67px;
 	line-height: 3;
 	background-color: var(--color-orange);
 	border-radius: 18px;
 	overflow: hidden;
-
+	width: 88vw;
 }
 
 .div-company-address-select-option-state select {
-	flex: 1;
-	padding: 0 .5em;
 	border-top-right-radius: 55px;
 	cursor: pointer;
-	height: 50px;
-	box-shadow: 5px 5px var(--color-orange-border);
+	flex: 1;
+	height: 49px;
+	padding: 0 .5em;
 }
 
 .div-company-address-select-option-state::after {
@@ -163,10 +162,10 @@ select::-ms-expand {
 	position: absolute;
 	top: 0;
 	right: -13px;
-	box-shadow: 2px 12px var(--color-orange-border);
+	box-shadow: 12px 12px var(--color-orange-border);
 	border-radius: 0px 26px 20px 0;
 	box-sizing: border-box;
-	transform: scale(.62);
+	transform: scale(.63);
 	border: 1px solid var(--color-orange-border);
 	color: var(--color-white);
 	padding: 0 18px;
@@ -174,6 +173,7 @@ select::-ms-expand {
 	cursor: pointer;
 	pointer-events: none;
 	transition: .25s all ease-in-out;
+	height: 81px;
 }
 
 /* ------------------------------------- */
@@ -181,20 +181,21 @@ select::-ms-expand {
 .div-company-category {
 	align-items: center;
 	background-color: var(--color-orange-border);
-	border: 1px solid var(--color-orange-border);
+	border: -2px solid var(--color-orange-border);
 	border-radius: 20px;
-	box-shadow: 2px 3px var(--color-orange-border);
+	box-shadow: 1px 1px var(--color-orange-border);
 	display: flex;
 	height: 30px;
 	margin-top: 15px;
 	max-width: 960px;
-	padding: 0.8rem 0;
+	padding: 1rem 0;
 	position: relative;
 	overflow: hidden;
+	width: 88vw;
 }
 
 .div-company-category select {
-	height: 1;
+	height: 70px;
 	line-height: 3;
 	width: 200px;
 }

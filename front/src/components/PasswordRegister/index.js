@@ -45,13 +45,13 @@ const PasswordRegister = () => {
 
 					<div>
 						<label for="input-company-password">Senha: </label>
-						<input class="input input-password" type="password" name="register-password" id="input-company-password">
+						<input class="input input-password" type="password" name="register-password" id="input-company-password" minlength="6" maxlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[ ,.!@#$%^&*_=+-]).{6,8}$" required>
 						<div class="input-error-message">Este campo não está válido</div>
 					</div>
 
 					<div>
 						<label id="-confirm-password" for="input-company-password-repeat">Confirme a senha: </label>
-						<input class="input input-password" type="password" name="register-password" id="input-company-password-repeat">
+						<input class="input input-password" type="password" name="register-password" id="input-company-password-repeat" minlength="6" maxlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[ ,.!@#$%^&*_=+-]).{6,8}$" required>
 						<div class="input-error-message">Este campo não está válido</div>
 					</div>
 

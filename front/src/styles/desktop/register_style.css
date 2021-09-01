@@ -71,12 +71,17 @@
 	}
 
 	#input-company-city {
-		max-width: 398px;
-		width: 40vw;
+		max-width: 435px;
+		
 	}
+
 
 	.div-company-address-state label {
 		margin: 20px;
+	}
+
+	.div-company-address-select-option-state {
+		max-width: 210.4px;
 	}
 
 	#input-company-state {
