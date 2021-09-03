@@ -28,9 +28,9 @@ window.cnpjMask = ( event ) => {
 		}
 	}
 
-	console.log(cnpjValue.value);
-	console.log(typeof cnpjValue.value);
-	console.log(cnpjValue.value.replace(/\D/g, '' ));
+	console.log( cnpjValue.value );
+	console.log( typeof cnpjValue.value );
+	console.log( cnpjValue.value.replace( /\D/g, '' ) );
 }
 
 window.phoneMask = ( event ) => {
@@ -61,4 +61,18 @@ window.phoneMask = ( event ) => {
 				phoneValue.value = fifteenDigitsReplaced;
 		}
 	}
+}
+
+window.cepMask = ( event ) => {
+
+	let cepValue = document.querySelector( '[data-type="cep"]' );
+	let widthValue = cepValue.value.length;
+	let keyboard = event.keyCode;
+
+	if ( keyboard != 8 ) {
+		if(widthValue == 5) {
+			cepValue.value = cepValue.value += '-';
+		}
+	}
+
 }
