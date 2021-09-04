@@ -123,7 +123,7 @@ const PerfilRegister = () => {
 										<input class="input" id="input-company-city" placeholder="Caçapava" type="text" required>
 										<div class="input-error-message">Este campo não está válido</div>
 									</div>
-
+		
 									<div class="div-input div-company-address-state">
 										<label for="input-company-state"> Estado:
 

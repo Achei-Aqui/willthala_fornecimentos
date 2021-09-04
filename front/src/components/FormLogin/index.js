@@ -5,58 +5,51 @@ import '../../styles/elements/link_register.css';
 import './style.css';
 import '../../js/masks_inputs.js'
 
-window.getLogin = () => {
+window.getLogin = ( event ) => {
+	event.preventDefault();
 	const cnpj = document.getElementById( 'cnpj' ).value;
-	const cnpjValueReplace = cnpj.replace( /\D/g, '' )
 	const senha = document.getElementById( 'senha' ).value;
 
-	// const urlAPI = 'https://people-app.herokuapp.com/';
-	const urlAPI = 'https://acheiaqui-api.herokuapp.com/auth';
-
-	const infosLogin = {
-		"cnpj": cnpjValueReplace,
-		"senha": senha,
-	}
-	/* const dictionary = {
-		name: "Laura Custódio Marinho",
-		age: 27,
-		cpf: "46547981321",
-		rg: "",
-		birth_date: "1994-03-25",
-		sex: "masculino",
-		sign: "",
-		mother_name: "",
-		father_name: "",
-		email: "whateveeer@hotmail.com",
-		telefone_number: "",
-		mobile: "",
-		height: null,
-		weight: null,
-		type_blood: "",
-		favorite_color: ""
-	} */
-
-	const request = new Request( urlAPI, {
+	const optionsPOSTAuth = {
 		method: 'POST',
-		body: JSON.stringify( infosLogin ),
-		headers: {
-			'content-type': 'application/json'
+		url: 'https://acheiaqui-api.herokuapp.com/auth',
+		data: {
+			cnpj: cnpj,
+    		senha: senha
 		}
+	}
+
+	axios.request( optionsPOSTAuth ).then( function ( response ) {
+		let dataResnposePOSTAuth = response.data;
+		console.log( dataResnposePOSTAuth );
+
+		if (response.status == 200) {
+			const token = dataResnposePOSTAuth.token;
+
+			const optionsGETContacts = {
+				method: 'GET',
+				url: 'https://acheiaqui-api.herokuapp.com/contatos',
+				headers: {
+					Authorization: `Bearer ${token}`
+				}
+			}
+
+			axios.request( optionsGETContacts ).then( function ( response ) {
+				let dataResponseGETContacts = response.data
+				window.location.href = './src/html/search.html';
+				console.log( dataResponseGETContacts );
+
+			}).catch( function ( error ) {
+				console.error( error );
+			} );
+
+		}
+
+	} ).catch( function ( error ) {
+		console.error( error );
 	} );
-
-	// request.use(cors());
-
-	fetch( request )
-		.then(
-			function ( data ) {
-				console.log( data, "RESPONSE" );
-			}
-		).catch(
-			function ( error ) {
-				console.log( error );
-			}
-		);
 }
+
 
 const FormLogin = () => {
 	return /* html */ `
