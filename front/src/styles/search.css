@@ -1,0 +1,7 @@
+body {
+	background-color: var(--color-white);
+}
+
+.main-title {
+	color: var(--color-orange);
+}

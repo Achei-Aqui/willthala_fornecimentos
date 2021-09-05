@@ -5,6 +5,7 @@
 }
 
 .main-title {
+	color: var(--color-white);
 	order: 0;
 }
 

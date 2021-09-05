@@ -3,46 +3,29 @@ import '../../styles/elements/inputs_forms.css';
 import '../../styles/elements/pattern_button.css';
 import '../../styles/elements/link_register.css';
 import './style.css';
-import '../../js/masks_inputs.js'
+import '../../js/masks_inputs.js';
 
 window.getLogin = ( event ) => {
 	event.preventDefault();
-	const cnpj = document.getElementById( 'cnpj' ).value;
-	const senha = document.getElementById( 'senha' ).value;
+	// const cnpj = document.getElementById( 'cnpj' ).value;
+	// const senha = document.getElementById( 'senha' ).value;
 
 	const optionsPOSTAuth = {
 		method: 'POST',
 		url: 'https://acheiaqui-api.herokuapp.com/auth',
 		data: {
-			cnpj: cnpj,
-    		senha: senha
+			cnpj: '40.065.264/0001-48',
+			senha: 'Laura123@*'
 		}
 	}
 
 	axios.request( optionsPOSTAuth ).then( function ( response ) {
 		let dataResnposePOSTAuth = response.data;
-		console.log( dataResnposePOSTAuth );
+		// console.log( dataResnposePOSTAuth );
 
-		if (response.status == 200) {
+		if ( response.status == 200 ) {
 			const token = dataResnposePOSTAuth.token;
-
-			const optionsGETContacts = {
-				method: 'GET',
-				url: 'https://acheiaqui-api.herokuapp.com/contatos',
-				headers: {
-					Authorization: `Bearer ${token}`
-				}
-			}
-
-			axios.request( optionsGETContacts ).then( function ( response ) {
-				let dataResponseGETContacts = response.data
-				window.location.href = './src/html/search.html';
-				console.log( dataResponseGETContacts );
-
-			}).catch( function ( error ) {
-				console.error( error );
-			} );
-
+			window.location.href = `./src/html/search.html?token=${token}`;
 		}
 
 	} ).catch( function ( error ) {
